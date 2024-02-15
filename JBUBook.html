@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Menu with CSS</title>
+		
+		<link rel="stylesheet" href="css/mystyles.css" />
+		<script type="text/javascript" src="js/myjs.js"></script>
+	</head>
+
+
+	<body bgcolor="#fff">
+		<br><br><br>
+	<center>
+   		<img src = "images/jbu.png" width = "5%" />
+    </center>
+	<div class = "cart">
+		<img src = "images/cart2.png" width = "30%" onclick = "showMyCart()"/>
+	</div>
+	<div class = "displaycart" id = "displayMyCart" style = "display:none;">
+		
+	</div>
+
+	
+	<h1 align="center"> JBU Online Store </h1>
+	
+	
+	<ul>
+		
+		<li class="menu-item"><a href="#" class="drp">Books</a>
+		<div class="menu-content">
+			<a  href="add_book.php">Graphic Design</a><br>
+			<a  href="remove_book.php">Computer Science</a><br>
+			<a href="display_books.php">Engineering</a><br>
+		</div>
+		
+		</li>
+		
+		<li class="menu-item"><a href="#" class="drp">Users </a>	
+		<div class="menu-content">
+			<a href="add_user.php">Add User</a><br>
+			<a href="remove_user.php">Remove User</a><br>
+			<a href="display_users.php">Display all Users</a><br>
+		</div>
+		</li>
+	</ul>
+
+		<p align="center"> Welcome to JBU's Online store - open for faculty/staff and students!</p> <br>
+		<center>
+		<table align = "center">
+			<tr>
+				<td align = "center"> 
+					<a href = "javascipt:void(0)" onclick = "popupfunction('1')" class = li>
+					<img src = "images/Textbook1.jpeg" width = "70%" /><br>Brands' Intro to CS <br><br>
+					</a>
+					<button style="width:100px;height:30px" name = "add4" id = "submit_btn" onclick = "javascript:addcart('Brands Intro to CS')"> Add to Cart </button>
+				</td>
+					<div id="popup1" class="white_content">
+						<p align=center><br><br>
+						<img src="images/Textbook1.jpeg" width=25% /><br>Brands' Intro to CS<br><br>Price: $40<br>Rating: 5<br>
+						<a href = "javascript:void(0)" onclick = "popupclose('1')" class=linktext>close window</a>
+						</p>
+					</div>
+					<div id="fade1" class="black_content"></div>
+
+					<td align = "center"> 
+						<a href = "javascipt:void(0)" onclick = "popupfunction('2')" class = li>
+						<img src = "images/Textbook2.jpeg" width = "70%" /><br>Dunhams' Intro to CS <br><br>
+						</a>
+						<button style="width:100px;height:30px" name = "add2" id = "submit_btn" onclick = "javascript:addcart('Dunhams Intro to CS')"> Add to Cart </button>
+					</td>
+						<div id="popup2" class="white_content">
+							<p align=center><br><br>
+							<img src="images/Textbook2.jpeg" width=25% /><br>Dunhams' Intro to CS<br><br>Price: $30<br>Rating: 4<br>
+							<a href = "javascript:void(0)" onclick = "popupclose('2')" class=linktext>close window</a>
+							</p>
+						</div>
+						<div id="fade2" class="black_content"></div>
+					
+						<td align = "center"> 
+							<a href = "javascipt:void(0)" onclick = "popupfunction('3')" class = li>
+							<img src = "images/Textbook3.jpeg" width = "70%" /><br>Advanced Computer Science<br><br>
+							</a>
+							<button style="width:100px;height:30px" name = "add3" id = "submit_btn" onclick = "javascript:addcart('Advanced Computer Science')"> Add to Cart </button>
+						</td>
+							<div id="popup3" class="white_content">
+								<p align=center><br><br>
+								<img src="images/Textbook3.jpeg" width=25% /><br>Advanced Computer Science<br><br>Price: $30<br>Rating: 5<br>
+								<a href = "javascript:void(0)" onclick = "popupclose('3')" class=linktext>close window</a>
+								</p>
+							</div>
+							<div id="fade3" class="black_content"></div>
+
+							<td align = "center"> 
+								<a href = "javascipt:void(0)" onclick = "popupfunction('4')" class = li>
+								<img src = "images/Textbook4.jpeg" width = "70%" /><br>AP Computer Science <br><br>
+								</a>
+								<button style="width:100px;height:30px" name = "add4" id = "submit_btn" onclick = "javascript:addcart('AP Computer Science')"> Add to Cart </button>
+							</td>
+								<div id="popup4" class="white_content">
+									<p align=center><br><br>
+									<img src="images/Textbook4.jpeg" width=25% /><br>AP Computer Science<br><br>Price: $50<br>Rating: 5<br>
+									<a href = "javascript:void(0)" onclick = "popupclose('4')" class=linktext>close window</a>
+									</p>
+								</div>
+								<div id="fade4" class="black_content"></div>
+
+							<td align = "center"> 
+								<a href = "javascipt:void(0)" onclick = "popupfunction('5')" class = li>
+								<img src = "images/Textbook5.jpeg" width = "70%" /><br>Computer Science Principles <br><br>
+								</a>
+								<button style="width:100px;height:30px" name = "add5" id = "submit_btn" onclick = "javascript:addcart('Computer Science Principles')"> Add to Cart </button>
+							</td>
+								<div id="popup5" class="white_content">
+									<p align=center><br><br>
+									<img src="images/Textbook5.jpeg" width=25% /><br>Computer Science Principles<br><br>Price: $50<br>Rating: 2<br>
+									<a href = "javascript:void(0)" onclick = "popupclose('5')" class=linktext>close window</a>
+									</p>
+								</div>
+								<div id="fade5" class="black_content"></div>
+
+
+			</tr>
+			<br><br>
+
+			
+		</table>
+		</center>
+	</body>
+</html>
